@@ -1,0 +1,30 @@
+[package]
+name = "archiver"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+argh = "0.1.12"
+indicatif = "0.17.8"
+md5 = "0.7.0"
+rayon = "1.10.0"
+tempfile = "3.13.0"
+zstd = "0.13.2"
+
+[[bin]]
+name = "archiver"
+path = "src/archiver/main.rs"
+
+[[bin]]
+name = "unarchiver"
+path = "src/unarchiver/main.rs"
+
+[lib]
+name = "common"
+path = "src/common/lib.rs"
+
+[profile.release]
+strip = true
+lto = true
+opt-level = 3
+panic = "abort"
