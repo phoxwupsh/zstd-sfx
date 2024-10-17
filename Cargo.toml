@@ -1,5 +1,5 @@
 [package]
-name = "archiver"
+name = "zstd-sfx"
 version = "0.1.0"
 edition = "2021"
 

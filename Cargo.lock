@@ -3,18 +3,6 @@
 version = 3
 
 [[package]]
-name = "archiver"
-version = "0.1.0"
-dependencies = [
- "argh",
- "indicatif",
- "md5",
- "rayon",
- "tempfile",
- "zstd",
-]
-
-[[package]]
 name = "argh"
 version = "0.1.12"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -427,6 +415,18 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "54a3ab4db68cea366acc5c897c7b4d4d1b8994a9cd6e6f841f8964566a419059"
 dependencies = [
  "zstd-sys",
+]
+
+[[package]]
+name = "zstd-sfx"
+version = "0.1.0"
+dependencies = [
+ "argh",
+ "indicatif",
+ "md5",
+ "rayon",
+ "tempfile",
+ "zstd",
 ]
 
 [[package]]
